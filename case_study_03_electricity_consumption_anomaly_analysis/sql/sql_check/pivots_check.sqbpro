@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="proje3.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="5607"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="final_dataset" custom_title="0" dock_id="1" table="4,13:mainfinal_dataset"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000011800ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">CREATE TABLE check_pvt_anomaly_type AS
+SELECT
+    anomaly_type,
+    COUNT(*) AS kayit_sayisi,
+    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 2) AS oran_pct,
+    ROUND(AVG(risk_score), 2) AS ort_risk_score
+FROM final_dataset
+GROUP BY anomaly_type
+ORDER BY kayit_sayisi DESC;
+
+CREATE TABLE check_pvt_il_ilce AS
+SELECT
+    il,
+    ilce,
+    COUNT(*) AS toplam_kayit,
+    SUM(CASE WHEN anomaly_type NOT IN ('normal') THEN 1 ELSE 0 END) AS anomali_kayit,
+    ROUND(
+        SUM(CASE WHEN anomaly_type NOT IN ('normal') THEN 1 ELSE 0 END) * 100.0 / COUNT(*),
+        2
+    ) AS anomali_oran_pct,
+    ROUND(AVG(risk_score), 2) AS ort_risk_score,
+    SUM(CASE WHEN anomaly_type = 'kacak' THEN 1 ELSE 0 END) AS kacak_sayisi,
+    SUM(CASE WHEN anomaly_type = 'ekipman_ariza' THEN 1 ELSE 0 END) AS ekipman_sayisi,
+    SUM(CASE WHEN anomaly_type = 'sayac_hatasi' THEN 1 ELSE 0 END) AS sayac_sayisi,
+    SUM(CASE WHEN anomaly_type = 'suspicious' THEN 1 ELSE 0 END) AS sup_sayisi
+FROM final_dataset
+GROUP BY il, ilce
+ORDER BY ort_risk_score DESC;
+
+CREATE TABLE check_pvt_daily_trend AS
+SELECT
+    DATE(load_profile_date) AS date_only,
+    COUNT(*) AS toplam_kayit,
+    SUM(CASE WHEN anomaly_type NOT IN ('normal') THEN 1 ELSE 0 END) AS anomali_sayisi,
+    ROUND(AVG(risk_score), 2) AS ort_risk_score,
+    SUM(CASE WHEN anomaly_type = 'kacak' THEN 1 ELSE 0 END) AS kacak,
+    SUM(CASE WHEN anomaly_type = 'ekipman_ariza' THEN 1 ELSE 0 END) AS ekipman,
+    SUM(CASE WHEN anomaly_type = 'sayac_hatasi' THEN 1 ELSE 0 END) AS sayac,
+    SUM(CASE WHEN anomaly_type = 'suspicious' THEN 1 ELSE 0 END) AS suspicious
+FROM final_dataset
+GROUP BY DATE(load_profile_date)
+ORDER BY DATE(load_profile_date);
+
+CREATE TABLE check_pvt_top10 AS
+SELECT
+    tesisat_no_id,
+    MAX(il) AS il,
+    MAX(ilce) AS ilce,
+    anomaly_type,
+    ROUND(MAX(risk_score), 2) AS max_risk_score,
+    ROUND(AVG(risk_score), 2) AS ort_risk_score,
+    COUNT(*) AS anomali_kayit_sayisi,
+    MAX(risk_reason) AS risk_reason,
+    MAX(abone_grubu) AS abone_grubu,
+    MAX(marka) AS marka,
+    MAX(model) AS model
+FROM final_dataset
+WHERE anomaly_type NOT IN ('normal')
+GROUP BY tesisat_no_id, anomaly_type
+ORDER BY ort_risk_score DESC
+LIMIT 10;</sql><current_tab id="0"/></tab_sql></sqlb_project>

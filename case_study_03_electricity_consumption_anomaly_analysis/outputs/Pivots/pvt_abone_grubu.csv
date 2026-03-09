@@ -1,0 +1,11 @@
+abone_grubu,toplam_kayit,anomali_kayit,ort_risk_score,kacak_sayisi,yuksek_risk_sayisi
+Tek Terimli Aydınlatma AG,5830,2662,52.45,1,2662
+Tek Terimli Tarımsal Sulama AG,3278,3134,41.68,1,1
+Tek Terimli Ticarethane AG,115631,49216,38.6,2,14992
+Tek Terimli Mesken OG,11734,7769,35.79,2,12
+Çift Terimli Ticarethane OG,29261,11817,35.52,0,5612
+Tek Terimli Mesken AG,5270,644,25.55,0,15
+Tek Terimli Tarımsal Sulama OG,23782,5956,22.54,1,1100
+Tek Terimli Ticarethane OG,118137,12040,16.14,1,5976
+Çift Terimli Sanayi OG,11723,0,9.64,0,0
+Tek Terimli Sanayi OG,29303,0,9.01,0,0

@@ -1,0 +1,4 @@
+case_no,tesisat_no_id,il_ilce,abone_grubu,sayac,anomaly_type,ort_risk_score,risk_reason,kayit_sayisi
+1,208e38ba076e428c9e5c9d9c0bd53f3f,ORDU/Gölköy,Tek Terimli Ticarethane OG,MAKEL C500.KMY.2251,kacak,79.57,"Akım yüksek, tüketim düşük. Olası kaçak kullanım. Ayrıca faz akımı sıfır.",5788
+2,208e38ba076e428c9e5c9d9c0bd53f3f,ORDU/Gölköy,Tek Terimli Ticarethane OG,MAKEL C500.KMY.2251,ekipman_ariza,79.57,"Akım yüksek, tüketim düşük. Olası kaçak kullanım. Ayrıca faz akımı sıfır.",5788
+3,48e385a3937042548a91f819b3cf1f53,ÇORUM/Merkez,Tek Terimli Ticarethane OG,MAKEL C500.KMY.2251,sayac_hatasi,24.36,Normal ölçüm aralığında.,5821

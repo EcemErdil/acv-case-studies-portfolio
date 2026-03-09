@@ -1,0 +1,11 @@
+tesisat_no_id,il,ilce,anomaly_type,max_risk_score,ort_risk_score,anomali_kayit_sayisi,risk_reason,abone_grubu,marka,model
+208e38ba076e428c9e5c9d9c0bd53f3f,ORDU,Gölköy,kacak,100.0,100.0,1,"Akım yüksek, tüketim düşük. Olası kaçak kullanım. Ayrıca faz akımı sıfır.",Tek Terimli Ticarethane OG,MAKEL,C500.KMY.2251
+d7a38b85cd1c4238a10bd6182d8978b1,SAMSUN,Havza,kacak,100.0,100.0,1,"Akım yüksek, tüketim düşük. Olası kaçak kullanım. Ayrıca faz akımı sıfır.",Tek Terimli Aydınlatma AG,MAKEL,C500.KMY.2251
+79567eafb552482e9d30cbd74eb5a67b,SİNOP,Ayancık,kacak,90.0,90.0,1,"Akım yüksek, tüketim düşük. Olası kaçak kullanım.",Tek Terimli Ticarethane AG,LUNA,LUN23.5010
+208e38ba076e428c9e5c9d9c0bd53f3f,ORDU,Gölköy,ekipman_ariza,82.15,79.92,5756,Faz dengesizliği ve yüksek akım. Ekipman arıza riski. Ayrıca faz akımı sıfır.,Tek Terimli Ticarethane OG,MAKEL,C500.KMY.2251
+d7a38b85cd1c4238a10bd6182d8978b1,SAMSUN,Havza,ekipman_ariza,85.14,79.4,2661,Faz dengesizliği ve yüksek akım. Ekipman arıza riski. Ayrıca faz akımı sıfır.,Tek Terimli Aydınlatma AG,MAKEL,C500.KMY.2251
+b4f5c124eae64882a39d56433599fddf,SİNOP,Ayancık,ekipman_ariza,85.03,78.67,4,Faz dengesizliği ve yüksek akım. Ekipman arıza riski. Ayrıca faz akımı sıfır.,Tek Terimli Ticarethane AG,MAKEL,C500.KMY.2251
+a895b42f51f545468fb948b6c3890a44,ÇORUM,Sungurlu,kacak,77.78,77.78,1,"Akım yüksek, tüketim düşük. Olası kaçak kullanım.",Tek Terimli Ticarethane AG,MAKEL,C500.KMY.2251
+a895b42f51f545468fb948b6c3890a44,ÇORUM,Sungurlu,ekipman_ariza,70.59,70.59,1,Faz dengesizliği ve yüksek akım. Ekipman arıza riski.,Tek Terimli Ticarethane AG,MAKEL,C500.KMY.2251
+7c69a45825ae4dd68cfa3550f4ea7190,ÇORUM,Sungurlu,ekipman_ariza,74.71,70.02,1281,Faz dengesizliği ve yüksek akım. Ekipman arıza riski.,Tek Terimli Ticarethane AG,MAKEL,C500.KMY.2251
+b8e3d862c2014fa390968be1a230bcc2,AMASYA,Merzifon,ekipman_ariza,80.0,69.59,8,Faz dengesizliği ve yüksek akım. Ekipman arıza riski. Ayrıca faz akımı sıfır.,Tek Terimli Ticarethane AG,MAKEL,C500.K0Y.2251

@@ -1,0 +1,20 @@
+column,dtype,non_null_count,null_count,null_pct,unique_values,sample_value
+unnamed:_0,int64,353949,0,0.0,353949,253923
+tesisat_no_id,object,353949,0,0.0,74,d3540cb9b2bf4f8ebdee2198c139dfcc
+il,object,353949,0,0.0,5,ÇORUM
+ilce,object,353949,0,0.0,24,Ayancık
+gerilim_seviyesi,object,353949,0,0.0,2,OG
+marka,object,353949,0,0.0,2,MAKEL
+model,object,353949,0,0.0,5,LUN23.5010
+abone_grubu,object,353949,0,0.0,10,Tek Terimli Ticarethane AG
+son_carpan_degeri,int64,353949,0,0.0,10,1
+l1,float64,353949,0,0.0,7463,1.15
+l2,float64,353949,0,0.0,9356,0.293
+l3,float64,353949,0,0.0,7900,0.08
+v1,float64,278515,75434,21.31,9304,234.12
+v2,float64,278515,75434,21.31,8852,235.68
+v3,float64,278515,75434,21.31,8003,240.26
+t0,float64,353949,0,0.0,336184,13331.021
+ri,float64,343709,10240,2.89,201555,0.0
+rc,float64,343709,10240,2.89,198437,49222.265
+load_profile_date,datetime64[ns],353949,0,0.0,6689,2025-08-14 00:45:00
