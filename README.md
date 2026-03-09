@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-<img src="images/05_district_scorecard.png width="900">
+<img src="images/05_district_scorecard.png" width="900">
 </p>
 
 <p align="center">
-<img src="images/Dashboard_KPI.png" width="900">
+<img src="images/01_Executive_Overview.png" width="900">
 </p>
 
 This repository contains three end-to-end analytics case studies developed during the **ITU&Ahmet Çalık Vakfı Advanced Data Analytics Program**.
