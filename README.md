@@ -1,5 +1,17 @@
 # ACV Data Analytics Case Studies Portfolio
 
+<p align="center">
+<img src="images/Dashboard_KPI.png" width="900">
+</p>
+
+<p align="center">
+<img src="images/05_district_scorecard.png width="900">
+</p>
+
+<p align="center">
+<img src="images/Dashboard_KPI.png" width="900">
+</p>
+
 This repository contains three end-to-end analytics case studies developed during the **ITU&Ahmet Çalık Vakfı Advanced Data Analytics Program**.
 
 The projects cover different stages of the data analytics workflow including:
